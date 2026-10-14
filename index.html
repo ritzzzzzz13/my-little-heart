@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211724">
+  <title>My Little Heart ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- WELCOME PAGE -->
+  <main class="welcome" id="welcome">
+    <div class="welcome-inner">
+      <p class="eyebrow">A LITTLE SOMETHING, JUST FOR YOU</p>
+      <h1>My Little Heart <span>♡</span></h1>
+      <p class="welcome-subtitle">A little something about us.</p>
+      <p class="welcome-copy">
+        Kuch log life mein aate hain aur dheere-dheere ghar jaise lagne lagte hain.
+        Tu unmein se ek hai. ♡
+      </p>
+
+      <form id="unlock-form">
+        <label for="password">OUR LITTLE SECRET</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter the name i saved you as..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit">Open my heart ♡</button>
+        <p id="message" aria-live="polite"></p>
+      </form>
+    </div>
+  </main>
+
+  <!-- MEMORY MOVIE -->
+  <main id="movie" class="movie hidden">
+    <header class="movie-header">
+      <p class="eyebrow">JUST YOU, ME & OUR LITTLE WORLD</p>
+      <h2>Little moments, <em>big feelings.</em></h2>
+      <p>Har memory ke peeche ek story hai… aur har story mein tu. ♡</p>
+    </header>
+
+    <section id="memory-stage" class="memory-stage" aria-live="polite">
+      <p class="eyebrow" id="memory-count">A MEMORY FOR YOU</p>
+
+      <div id="memory-media" class="memory-media"></div>
+
+      <p id="memory-caption" class="memory-caption"></p>
+      <p id="memory-note" class="memory-note"></p>
+
+      <div class="memory-controls">
+        <button type="button" id="prev-memory" class="secondary-button">
+          ← Previous
+        </button>
+        <button type="button" id="next-memory">
+          Next memory ♡ →
+        </button>
+      </div>
+    </section>
+
+    <!-- PERSONAL LETTER -->
+    <section class="letter-section hidden" id="letter-section">
+      <p class="eyebrow">SOMETHING I WANT YOU TO KNOW</p>
+      <h2>For my favourite person, <em>Prekchha.</em></h2>
+
+      <div id="letter-content" class="letter-content"></div>
+
+      <button type="button" id="open-ending">END ♡</button>
+    </section>
+
+    <footer class="movie-footer">
+      <p>Made with all my love, just for you. ♡</p>
+    </footer>
+  </main>
+
+  <!-- SEPARATE FULL-SCREEN END PAGE -->
+  <main id="ending" class="ending hidden">
+    <div class="ending-orb ending-orb-one"></div>
+    <div class="ending-orb ending-orb-two"></div>
+
+    <div class="ending-content">
+      <p class="eyebrow">BEFORE THIS LITTLE MOVIE ENDS</p>
+
+      <h2 class="ending-title">
+        One last thing,<br>
+        <em>my little heart...</em>
+      </h2>
+
+      <p class="ending-copy">
+        Saari memories ke baad bhi, ek baat kehni baaki hai. ♡
+      </p>
+
+      <button
+        type="button"
+        id="heart-button"
+        class="heart-button"
+        aria-label="Reveal your surprise"
+        aria-expanded="false"
+      >
+        ♥
+      </button>
+
+      <p class="heart-hint">Touch the heart ♡</p>
+
+      <!-- LOVE MESSAGE REVEAL -->
+      <div id="heart-message" class="heart-message hidden" aria-live="polite">
+        <p class="eyebrow">A LITTLE MESSAGE, JUST FOR YOU</p>
+
+        <div class="final-heart" aria-hidden="true">♥</div>
+
+        <h2>I LOVE YOU, PREKSHA</h2>
+
+        <p class="final-message">
+          Tu sirf meri best friend nahi hai.
+          Tu mera safe place, meri khushi aur mera home away from home hai.
+          College life tere bina imagine nahi hoti.
+          Humesha meri little heart rehna, okay?
+        </p>
+
+        <p class="final-signoff">Forever your person. ♡</p>
+      </div>
+    </div>
+
+    <footer class="ending-footer">MADE WITH ALL MY LOVE ♡</footer>
+  </main>
+
+  <!-- BACKGROUND MUSIC: REMAINS OUTSIDE ALL SCREENS -->
+  <audio id="background-music" loop preload="metadata">
+    <source src="public/memories/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
